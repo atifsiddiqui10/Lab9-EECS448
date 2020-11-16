@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <title> Atif's Web Store </title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "formChecker.js"></script>
+    <h1> <center> ATIF'S SPORTING GOODS </center></h1>
+ </head>
+
+
+  <body>
+    <form action = "customerBackend.php" method = "POST" id = "form" onsubmit = "return validateInput()">
+      <div class = "itemContainer">
+        <div id = "Shoe">
+          <h2> Soccer Cleats: $200 </h2>
+          Quantity: <input id="SC" name="SCQ" type = "number" value = "0" min="0">
+        </div>
+
+        <div id = "SoccerBall">
+          <h2> Soccer Ball: $80 </h2>
+          Quantity: <input id="SB" name="SBQ" type = "number" value = "0" min="0">
+        </div>
+
+        <div id = "SoccerJersey">
+          <h2> Soccer Jersey: $150 </h2>
+          Quantity: <input id="SJ" name="SJQ" type = "number" value = "0" min="0">
+        </div>
+      </div>
+
+    <div class = "confirmOrder">
+          <h2>Shipping</h2>
+          Please choose a shipping type <br>
+          <input type="radio" name="shipping" value="0" checked="true"> Free 7 day<br>
+          <input type="radio" name="shipping" value="50"> Overnight: $50.00<br>
+          <input type="radio" name="shipping" value="5"> Three Day: $5.00<br><br>
+
+          Username: <input id="username" name="username" type="text"><br>
+          Password: <input id="password" name="password" type="text" required><br>
+     </div>
+
+         <br><input type = "reset" value="Clear Order">
+          <input type = "Submit" value="Confirm Order">
+
+      </form>
+  </body>
+</html>
